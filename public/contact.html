@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Not Safe</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .popup {
+            width: 600px;
+            background-color: #222;
+            border: 2px solid #f00;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 15px #f00;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .popup h1 {
+            color: #ff4444;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .popup p {
+            font-size: 1rem;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .popup .button {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .popup .button a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #f00;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .popup .button a:hover {
+            background-color: #ff4444;
+        }
+
+        .popup footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .popup footer a {
+            color: #ff4444;
+            text-decoration: none;
+        }
+
+        .popup footer a:hover {
+            text-decoration: underline;
+        }
+
+        .game-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .game-link a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #555;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .game-link a:hover {
+            background-color: #777;
+        }
+
+        .marquee {
+            margin-top: 30px;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee p {
+            display: inline-block;
+            font-size: 1rem;
+            color: #fff;
+            animation: scroll 20s linear infinite;
+            /* Increased duration for slower speed */
+        }
+
+        .marquee p strong {
+            color: #ff4444;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup">
+        <h1>⚠️ Website Not Safe for Browsing</h1>
+        <p>The website you tried to access has been flagged as unsafe for browsing. If you believe this is an error,
+            please contact the administrator for further assistance.</p>
+        <div class="button">
+            <a href="#">Contact Admin</a>
+            <a href="#">Learn More About Secure Browsing</a>
+            <a href="#">Report This Site</a>
+            <a href="#">Visit Cyber Security Guidelines</a>
+        </div>
+        <footer>
+            © 2025 SafeLink Extension | <a href="#">Support</a>
+        </footer>
+    </div>
+
+    <!-- Game Section -->
+    <div class="game-link">
+        <a href="game.html">🎮 Play Game Instead of Getting Phished!</a>
+    </div>
+
+    <!-- Marquee Section -->
+    <div class="marquee">
+        <p>
+            Remember, your <strong>money is hard-earned</strong>, so don’t give it to <strong>spammers</strong>. Also,
+            your <strong>personal details are personal</strong>. Avoid disclosing them unnecessarily on the internet.
+        </p>
+    </div>
+</body>
+
+</html>

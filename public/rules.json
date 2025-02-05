@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome-extension://__EXTENSION_ID__/contact.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "*://*.malicious-site.com/*",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
